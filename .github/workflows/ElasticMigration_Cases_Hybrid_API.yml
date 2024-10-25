@@ -1,8 +1,8 @@
 name: ElasticMigration_Cases_Hybrid_API_Runner
 
 on:
-  schedule:
-    - cron: '1 12 * * 6'
+ # schedule:
+   # - cron: '1 12 * * 6'
    # - cron: '1 */4 * * 0-6'
   workflow_dispatch:
     inputs:
