@@ -1,4 +1,4 @@
-name: Profiles_stg_Runner
+name: ElasticMigration_Cases_Hybrid_API_Runner
 
 on:
   schedule:
@@ -48,10 +48,10 @@ jobs:
         run: neoload workspaces use "K&D - I and I"
         
       - name: "Do Test Settings"
-        run: neoload test-settings --zone HtRnd --lgs 1 --scenario 'scenario1' createorpatch "Profiles_stg_UI_CICD"
+        run: neoload test-settings --zone HtRnd --lgs 1 --scenario 'scenario1' createorpatch "ElasticMigration_Cases_Hybrid_API"
 
       - name: "Upload Project"
-        run: neoload project --path Profiles_UI_CICD.zip upload Profiles_stg_UI_CICD
+        run: neoload project --path ElasticMigration_Cases_Hybrid_API.zip upload ElasticMigration_Cases_Hybrid_API
 
       - name: "Neoload run test"
         run: >
